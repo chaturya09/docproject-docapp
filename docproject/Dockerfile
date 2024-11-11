@@ -15,7 +15,7 @@ RUN apt-get update && \
 WORKDIR /django
 
 # Copy the requirements file first to leverage Docker caching
-COPY requirements.txt requirements.txt
+COPY docproject/requirements.txt requirements.txt
 
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
